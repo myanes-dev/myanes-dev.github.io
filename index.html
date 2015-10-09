@@ -3,29 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>myanes-dev</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    
+    <!-- Header -->
     <header>
-        <h1>THINKING POSITIVE</h1>
-        <p>WEB DEVELOPER // DESIGNER // APP DEVELOPER</p>
+        <div id="slogan" class="font-s">
+            <h1 class="title">myanes.dev</h1>
+            <p>"Sentido común,<br> el menos común de los sentidos"<br> - Albert Einstein -</p>
+        </div>
+        <a id="begin" href="#" onclick="moverse('profile')">Begin</a>
     </header>
-    <profile>
-        <img id="avatar" src="img/avatar.svg">
-        <h1>Miguel Vicente Yanes Martínez</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-   
-    </profile>
-    
-    <footer>
-        <p>Twitter // Instagram // Lnkedin</p>
+    <!-- Intro -->    
+    <section id="profile">
+        <div class="font-s">
+            <h1 class="title">Miguel Vicente Yanes Martínez</h1>
+            <p>"Sentido común,el menos común de los sentidos" - Albert Einstein -</p>
+        </div>
+        <ul id="menu">
+            <li><span class="menu_item" onclick="moverse('services')"><img class="menu_icon" src="img/tie.svg"></span></li>
+            <li><span class="menu_item" onclick="moverse('knowledge_cloud')"><img class="menu_icon" src="img/mind.svg"></span></li>
+            <li><span class="menu_item" onclick="moverse('jobs')"><img class="menu_icon" src="img/jobs.svg"></span></li>
+            <li><span class="menu_item" onclick="moverse('contact')"><img class="menu_icon" src="img/mail.svg"></span></li>
+        </ul>
+    </section>
+    <!-- Section 1 -->      
+    <section id="services">
+        <div class="row">
+            <div class="row_picture"></div>
+            <div class="row_desc">
+                <h1 class="title">Web developer</h1>
+                <p>"Sentido común,el menos común de los sentidos" - Albert Einstein -</p>
+            </div>
+        </div>
+        <div class="row reverse">
+            <div class="row_picture"></div>
+            <div class="row_desc">
+                <h1 class="title">Web developer</h1>
+                <p>"Sentido común,el menos común de los sentidos" - Albert Einstein -</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row_picture"></div>
+            <div class="row_desc">
+                <h1 class="title">Web developer</h1>
+                <p>"Sentido común,el menos común de los sentidos" - Albert Einstein -</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 --> 
+    <section id="knowledge_cloud">
+        <ul class="cloud_list">
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>ASP.NET</li>
+            <li>ANDROID</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>ASP.NET</li>
+            <li>ANDROID</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>ASP.NET</li>
+            <li>ANDROID</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>ASP.NET</li>
+            <li>ANDROID</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>ASP.NET</li>
+            <li>ANDROID</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+    </section>
+    <!-- Section 3 --> 
+    <section id="jobs">
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <h3>job title</h3>
+        </div>
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <h3>job title</h3>
+        </div>
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <h3>job title</h3>
+        </div>
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <div class="picture"></div>
+            <h3>job title</h3>
+        </div>
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <h3>job title</h3>
+        </div>
+        <div class="card" onclick="mostrarJOB(this)">
+            <span class="hover_text">+ more info</span>
+            <h3>job title</h3>
+        </div>
+    </section>
+    <!-- Section 4 -->     
+    <section id="contact" class="font-s">
+        <h2 class="tittle-wide">Feel free to contact me at...</h2>
+        <span class="separator"></span>
+        <ul class="contact_list">
+            <li><img src="img/linkedin.svg" class="ln_icon icon"><span>inkedin.com/mvyanes</span></li>
+            <li><img src="img/mail.svg" class="mail_icon icon">myanes.dev@gmail.com</li>
+        </ul>
+    </section>
+    <!-- Footer -->     
+    <footer id="footer">
+        <p>Miguel Vicente Yanes Martínez | myanes.dev | 2015</p>
     </footer>
-    
-    <script src="/js/main.js"></script>
+        
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
 </body>
 </html>

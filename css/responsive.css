@@ -1,0 +1,31 @@
+/****************
+ **** MOBILE ****
+ ****************/
+@media screen and (max-width: 480px){
+    
+    .font-s{
+        font-size: 12pt;
+    }
+    #menu{
+            flex-direction: column;
+        }
+    
+    .card{
+       min-width: 90vw; 
+    }
+}
+
+/****************
+ **** TABLET ****
+ ****************/
+@media screen and (max-width: 768px){
+    .font-s{
+        font-size: 13pt;
+    }
+    .row, .row.reverse{
+        flex-direction: column;
+    }
+    .row_picture{
+        width: 100%;
+    }
+}
