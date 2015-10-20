@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">Responsive Form</div>
+    <form id="formulario" name="formulario" onsubmit="return validar()">
+        <div class="fila">
+            <div class="label">NIF</div>
+            <input class="inputs_text" name="nif" type="text" placeholder="Introduzca su NIF sin espacios en Blanco ni guiones"> 
+        </div>
+        <div class="fila">
+            <div class="label">Fecha de nacimiento</div>
+            <input class="inputs_text" name="fecha" type="text" placeholder="Introduzca la fecha en el siguiente formato: DD/MM/AAAA">
+        </div>
+        <div class="fila">
+            <div class="label">Clave de acceso</div>
+            <input id="clave" name="clave" type="text" readonly="true" size="5"> 
+            <div id="inputs_numbers">
+                <div class="fila_numeros">
+                </div>
+                <div class="fila_numeros"></div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="label">Tipo de Solicitante</div>
+            <div id="inputs_solicitante" class="input">
+                <input onchange="solicitatnte()" class="radios" name="radios" id="radio1" type="radio"><label for="radio1" class="label">Profesor</label>
+                <input onchange="solicitatnte()" class="radios" name="radios" id="radio2" type="radio"><label for="radio2" class="label">Alumno</label>
+            </div>
+        </div>
+        <div class="fila oculta" id="departamento">
+            <div class="label">Departamento</div>
+            <select class="inputs_text dropDownList" name="departamentos" id="departamentos">
+                <option value="" disabled selected style="display:none;">Selecciona un departamento</option>
+                <option value="departamento1">departamento1</option>
+                <option value="departamento2">departamento2</option>
+                <option value="departamento3">departamento3</option>
+            </select>
+        </div>
+        <div class="fila oculta" id="facultad">
+            <div class="label">Facultad</div>
+            <select class="inputs_text dropDownList" name="facultades" id="facultades">
+                <option value="" disabled selected style="display:none;">Seleciona una facultad</option>
+                <option value="facultad1">facultad1</option>
+                <option value="facultad2">facultad2</option>
+            </select>
+        </div>
+        <div class="fila oculta" id="curso">
+            <div class="label">Curso</div>
+            <select class="inputs_text dropDownList" name="cursos" id="cursos">
+                <option value="" disabled selected style="display:none;">Seleciona un curso</option>
+                <option value="facultad1">Primero</option>
+                <option value="facultad2">Segundo</option>
+            </select>
+        </div>
+        <div class="fila oculta">
+            <div class="label">Curso</div>
+            <input class="inputs_text" name="curso" type="text"> 
+        </div>
+        <div class="fila">
+            <div class="label">Género</div>
+            <div id="inputs_genero" class="input"><center>
+                <label><input class="radios" name="radios2" id="rbMujer" type="radio"><img src="a.png" for="rbHombre"></label>
+                <label><input class="radios" name="radios2" id="rbHombre" type="radio"><img src="b.png" for="rbHombre"></label>
+                </center>
+            </div>
+        </div>
+        <div id="botones"><button onclick="limpiar(); return false" id="reset">Limpiar Campos</button><button id="registrarse">Registrarse</button>
+        </div>
+        
+    </form>
+    <div id="footer">Miguel Vicente Yanes Martínez</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

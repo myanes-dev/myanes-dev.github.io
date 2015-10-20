@@ -1,0 +1,36 @@
+
+.input .label{
+    display: block;
+    width: auto;
+}
+
+#resultado ul{
+    list-style: none;
+    margin-bottom: 1em;
+}
+#resultado li{
+    text-align: center;
+}
+
+@media screen and (min-width: 460px) {
+    
+   .label{
+    width: 100%;
+       text-align: center;
+       margin-bottom: 0.5em;
+   }
+  .input .label{
+    margin-left: 0%;
+  }
+    
+    #ciclos_lista{
+        width: 100%;
+    }
+    
+    #ciclos_lista .label{
+        display: inline;
+        padding: 0 0.5em;
+        line-height: 2em;
+    }
+    
+}

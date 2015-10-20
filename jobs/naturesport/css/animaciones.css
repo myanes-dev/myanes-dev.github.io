@@ -1,0 +1,207 @@
+/*************
+** DEFAULTS **
+*************/
+@keyframes right_left {
+    from {right: -40%;}
+    to {right: 100%;}
+}
+@keyframes right_left-small {
+    from {left: 15%;}
+    to {left: 0%;}
+}
+
+@keyframes left_right {
+    from {left: -40%;}
+    to {left: 100%;}
+}
+@keyframes left_right-small {
+    from {left: 0%;}
+    to {left: 15%;}
+}
+
+/*************
+ ** AVIONETA **
+ *************/
+
+.aire .avioneta{
+    animation: right_left 30s linear infinite;
+}
+
+/*************
+ ** PARAPENTE **
+ *************/
+@keyframes parapente_rotate {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to {
+        transform: rotateZ(-45deg);
+    }
+}
+    
+.aire .parapente{
+    animation: parapente_rotate 4s linear infinite alternate;
+}
+
+/*************
+ ** mariposa **
+ *************/
+@keyframes mariposa_vuelo {
+    0%{
+        top: 7%;
+        left: 59%;
+    }
+    25%{
+        top: 6%;
+        left: 62%;
+    }
+    50%{
+        top: 7%;
+        left: 68%;
+    }
+    75%{
+        top: 10%;
+        left: 62%;
+    }
+    100%{
+        top: 7%;
+        left: 59%;
+    }
+}
+    
+.tierra .mariposa{
+    animation: mariposa_vuelo 10s linear infinite, parapente_rotate 1s linear infinite alternate;
+}
+
+/**********
+ ** OLAS **
+ **********/
+@keyframes ola1_meneo {
+    from {top: 0;}
+    to {top: -25px;}
+}
+
+.ola1{
+    animation-name: ola1_meneo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ola2_meneo {
+    from {top: -75px;}
+    to {top: -45px;}
+}
+.ola2{
+    animation-name: ola2_meneo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes ola3_meneo {
+    from {top: -80px;}
+    to {top: -60px;}
+}
+.ola3{
+    animation-name: ola3_meneo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ola4_meneo {
+    from {top: 0;}
+    to {top: 20px;}
+}
+.ola_fondo{
+    animation-name: ola4_meneo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*************
+ ** TIBURON **
+ *************/
+.tiburon{
+    animation: right_left 30s linear infinite;
+}
+
+/*************
+ ** peces **
+ *************/
+@keyframes peces_rotate {
+    from {
+        top: 200px;
+        left: -20%;
+    }
+    to {
+        top: 400px;
+        left: 100%;
+    }
+}
+.tres_peces{
+    animation: peces_rotate 30s linear infinite;
+    top: 300px;
+    left: 25%;
+    width: 30%;
+}
+
+/*************
+ ** buceadora **
+ *************/
+@keyframes buceadora_move {
+    from {
+        top: -50px;
+        left: -50%;
+    }
+    to {
+        top: 100px;
+        left: 100%;
+    }
+}
+@keyframes buceadora_rotate {
+    from {
+        transform: rotateZ(-20deg);
+    }
+    to {
+        transform: rotateZ(-10deg);
+    }
+}
+.buceadora{
+    animation: buceadora_move 30s linear 0s infinite, buceadora_rotate 4s linear 2s infinite alternate;
+}
+
+/*************
+ ** bandana **
+ *************/
+@keyframes bandana_move {
+    from {
+        top: 200px;
+        right: -20%;
+    }
+    to {
+        top: -100px;
+        right: 100%;
+    }
+}
+
+.bandana{
+    animation: bandana_move 30s linear 0s infinite;
+}
+
+/*****************
+ ** peces algas **
+ *****************/
+
+.pejeverde{
+    animation: left_right-small 10s linear 0s infinite alternate;
+}
+
+.pez{
+    animation: right_left-small 10s linear 0s infinite alternate;
+}
+
+

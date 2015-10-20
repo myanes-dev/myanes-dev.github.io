@@ -1,0 +1,3 @@
+Se permiten modificar las tareas ya creadas. La edición se realiza mediante un "pop-up".
+
+MIGUEL VICENTE YANES MARTÍNEZ

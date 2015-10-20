@@ -1,0 +1,23 @@
+Miguel Vicente Yanes Martínez
+
+***************
+SOCCER INVADERS
+***************
+
+URL: soccerinvaders.myanes.iescmwin.org
+
+..............
+INSTRUCCIONES
+··············
+El objetivo es acabar con todos los enemigos en el menor tiempo posible.(El record está en 19 segundos)
+
+Controles: Flechas izq-dch - para mover el PJ
+	   Espacion - para disparar
+
+..............
+CODIGO
+··············
+	- Se usan tres canvas, uno para los enemigos, otro para el PJ y el último para las pelotas.
+	- Está todo "organizado" en funcioes, siendo las más importantes: juego(), checkImages(), init(), loop(), update() y render();
+	- Al final de la función "juego()" se incia la ejecución manual llamando a las funciones initImages() y checkImages();
+

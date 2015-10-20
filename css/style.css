@@ -6,15 +6,20 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
-    background-image: -o-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+#background{
+    position: fixed;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../img/bg.jpg");
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+    background: -o-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
+    background: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/bg.jpg");
     background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+body{
     padding-top: 0;
     color: #fff;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -23,7 +28,10 @@ body{
     letter-spacing: 0.075em;
     line-height: 1.65em;
 }
-
+a{
+    text-decoration: none;
+    color: #FFF;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -206,23 +214,105 @@ header a{
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
     margin-bottom: 2em;
     height: 15em;
-    background-image: url("../img/job01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(1){
+  background-image: url("../img/job01-sd.png");
+}
+.card:nth-child(1):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job01-sd.png");
     background-size: cover;
 }
+
+.card:nth-child(2){
+  background-image: url("../img/job02-sd.png");
+}
+.card:nth-child(2):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job02-sd.png");
+    background-size: cover;
+}
+
+.card:nth-child(3){
+  background-image: url("../img/job03-sd.png");
+}
+.card:nth-child(3):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job03-sd.png");
+    background-size: cover;
+}
+
+.card:nth-child(4){
+  background-image: url("../img/job04-sd.png");
+}
+.card:nth-child(4):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job04-sd.png");
+    background-size: cover;
+}
+
+.card:nth-child(5){
+  background-image: url("../img/job05-sd.png");
+}
+.card:nth-child(5):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job05-sd.png");
+    background-size: cover;
+}
+
+/*.card:hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job01.jpg");
+}*/
+
 .wide{
     width: 90%;
     height: 80vh;
 }
+
 .card .hover_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4em;
     width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
     text-align: center;
     z-index: 100;
     color: white;
 }
+ .card .hover_text img{
+    width: 48px;
+    height: 48px;
+ }
+
+.card .hover_text img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
 .card h3{
     color: #2e3842;
     display: inline-block;
@@ -230,6 +320,10 @@ header a{
     position: relative;
     padding: 1em;
     background-color: #FFF;
+}
+
+.card:hover h3 + .hover_text{
+    display: flex;
 }
 
 #contact{
@@ -281,3 +375,22 @@ header a{
     font-size: 13pt;
     text-align: center;
 }
+
+#up{
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: cadetblue;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#up:hover{
+    cursor: pointer;
+};

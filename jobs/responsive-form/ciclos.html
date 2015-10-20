@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ciclos.css">
+</head>
+
+<body>
+    <div id="header">Formación Profesional Canarias</div>
+    <form id="formulario" name="formulario" onsubmit="return validar()">
+        <div class="fila">
+            <div class="label">ISLA</div>
+            <div id="inputs_isla" class="input"><center>
+                <label><input class="radios" name="radios2" id="rbTFE" type="radio"><img src="tenerife.png" for="rbTFE"></label>
+                <label><input class="radios" name="radios2" id="rbLP" type="radio"><img src="lapalma.png" for="rbLP"></label>
+                </center>
+            </div>
+            
+        </div>
+        <div class="fila">
+            <div class="label">Modalidad del ciclo</div>
+            <div id="inputs_modalidad" class="input">
+                <center>
+                <input onchange="actualizarDatos()" class="radios" name="radios" id="radio1" type="checkbox"><label for="radio1" class="label">Presencial</label>
+                <input onchange="actualizarDatos()" class="radios" name="radios" id="radio2" type="checkbox"><label for="radio2" class="label">Semipresencial</label>
+                </center>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="label">Nivel del ciclo</div>
+            <div id="inputs_modalidad" class="input">
+                <center>
+                <input onchange="actualizarDatos()" class="radios" name="cbs" id="cb1" type="checkbox"><label for="cb1" class="label">Grado Medio</label>
+                <input onchange="actualizarDatos()" class="radios" name="cbs" id="cb2" type="checkbox"><label for="cb2" class="label">Grado Superior</label>
+                </center>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="label">Ciclos</div>
+            <div id="ciclos_lista" class="input">
+                <center>
+                <input onchange="actualizarDatos()" class="radios" name="ciclos" id="ciclo1" type="checkbox"><label for="ciclo1" class="label">Sistemas Microinformáticos y Redes</label>
+                <input onchange="actualizarDatos()" class="radios" name="ciclos" id="ciclo2" type="checkbox"><label for="ciclo2" class="label">Adminitración de Sistemas Informáticos y Redes</label>
+                <input onchange="actualizarDatos()" class="radios" name="ciclos" id="ciclo3" type="checkbox"><label for="ciclo3" class="label">Desarrollo de Aplicaciones Multiplataforma</label>
+                <input onchange="actualizarDatos()" class="radios" name="ciclos" id="ciclo4" type="checkbox"><label for="ciclo4" class="label">Desarrollo de Aplicaciones Web</label>
+                </center>
+            </div>
+        </div>
+        <div id="resultado">
+            <div class="label">Resultado</div>
+            <ul id="tenerife">
+                <li id="rambla">IES San Juan de la Rambla</li>
+                <li id="cruz">IES Puerto de la Cruz - Telesforo Bravo</li>
+                <li id="domingo">IES Domingo Pérez Minik</li>
+                <li id="cesar">IES Cesar Manrique</li>
+                <li id="ana">IES Santa Ana</li>
+                <li id="galletas">IES Las Galletas</li>
+                <li id="adeje">IES Adeje 2</li>
+            </ul>
+            <ul id="lapalma">
+                <li id="villa">IES Villa de Mazo</li>
+                <li id="maria">IES José María Pérez Pulido</li>
+            </ul>
+        </div>
+        
+    </form>
+    <div id="footer">Miguel Vicente Yanes Martínez</div>
+    
+    <script src="ciclos.js"></script>
+</body>
+</html>

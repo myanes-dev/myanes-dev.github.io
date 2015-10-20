@@ -1,0 +1,74 @@
+
+
+@media screen and (min-width: 1000px) {
+    
+    .mar{
+        top: -80px;
+    }
+    .ola_fondo{
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    
+    .mar{
+        top: -140px;
+    }
+    .ola3{
+        background-position: center -70px;
+    }
+    .ola_fondo{
+        height: 450px;
+    }
+    
+    .tiburon{
+        background-size: 225%;
+    }
+
+    .suelo_marino{
+    top: -600px;
+    }
+    .fondo_marino{
+        top: -700px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .fondo_marino .menu{
+        top: -4vh;
+    }
+    
+    .tierra .montanas{
+        top: 0;
+    }
+
+    .tierra .colina_ciclista{
+        
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .fondo_marino .menu{
+        top: -2vh;
+    }
+    
+    .pejeverde{
+        bottom: 350px;
+    }
+    
+    .pez{
+        bottom: 315px;
+    }
+    
+    .menu span{
+        padding: .25em .5em;
+        font-size: 14px;
+    }
+    
+}

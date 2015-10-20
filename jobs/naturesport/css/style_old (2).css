@@ -1,0 +1,431 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    z-index: 30;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.noscroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #DCDDCD;
+    background-attachment: fixed;
+}
+.contenedor{
+    border: solid;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+header{
+    position: relative;
+    background-color: #DCDDCD;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    padding: 0 0;
+    background-color: transparent;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    right: 1em;
+    z-index: 20;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #363635;
+}
+
+header .menu{
+    top: 50px;
+}
+
+.aire .menu{
+    top: 100px;
+}
+
+.tierra .menu{
+    top: -50px;
+}
+
+.oceano .menu{
+    top: -100px;
+}
+
+.fondo_marino .menu{
+    top: -70px;
+}
+
+.menu span{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 15px;
+    padding: .25em 1em;
+    font-weight: bold;
+}
+
+.menu span:hover{
+    background-color: #FFF;
+    color: #363635;
+    cursor: pointer;
+}
+
+.menu span.selected{
+    background-color: #363635;
+    color: white;
+}
+
+.menu hr{
+    background: #363635;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 100%;
+}
+
+header h1{
+    line-height: 54px;
+    font-size: 54px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.aire {
+    position: relative;
+    background-color: #67C6DD;
+    height: 600px;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aire:before
+{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 68px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: url(../img/nubes_bg.png) center top repeat-x;    
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.aire .parapente{
+    position: absolute;
+    width: 200px;
+    z-index: 8;
+    top: 400px;
+}
+
+.aire .avioneta{
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    z-index: 8;
+    top: 150px;
+    
+}
+
+.aire .nubes{
+    position: absolute;
+    z-index: 8;
+    top: 500px;
+    width: 30%;
+}
+
+.aire .nubes:nth-child(4){
+    left: 20%;
+    top: 350px;
+}
+
+.aire .nubes:nth-child(5){
+    left: 40%;
+    top: 400px;
+}
+
+.aire .nubes:nth-child(6){
+    right: 0;
+    top: 400px;
+}
+.aire .nubes:nth-child(7){
+    right: 15%;
+    top: 400px;
+}
+
+
+.tierra {
+    position: relative;
+    background-color: #67C6DD;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.tierra .montanas{
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+}
+
+.tierra .colina_ciclista{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+.tierra .tierra_fijo{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.ola3{
+    background-image: url(../img/ola3.svg);
+    background-position: center -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4FA0CA;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+    display: block;
+    top: -100px;
+}
+.ola2{
+    background-image: url(../img/ola2.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:transparent;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 13;
+    display: block;
+    top: -50px;
+}
+.ola1{
+    background-image: url(../img/ola1.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 14;
+    display: block;
+}
+
+.mar{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #2E58A6;
+    z-index: 10;
+    height: 260px;
+    top: 50px;
+}
+
+.ola_fondo{
+    background-image: url(../img/ola-fondomarino.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    z-index: 15;
+    display: block;
+}
+
+.oceano{
+    display: block;
+    background-color: #2E58A6;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 800px;
+    z-index: 10;
+    top: 10px;
+}
+
+.oceano-items{
+    position: absolute;
+    z-index: 11;
+}
+
+.buceadora{
+    left: 10%;
+    width: 30%;
+    min-width: 200px;
+}
+
+.bandana{
+    top: 200px;
+    right: 10%;
+    width: 30%;
+}
+
+.tres_peces{
+    top: 300px;
+    left: 25%;
+    width: 30%;
+}
+
+.tiburon{
+    background-image: url(../img/tiburon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    width: 40%;
+    height: 200px;
+    right: 5%;
+    top: 400px;
+}
+
+.pejeverde{
+    top: 550px;
+    left: 0;
+    width: 20%;
+}
+
+.pez{
+    top: 600px;
+    left: 18%;
+    width: 20%;
+    z-index: 12;
+}
+
+.suelo_marino{
+    /*background-image: url(../img/suelomarino-se%C3%B1al.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;*/
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 11;
+    top: -400px;
+    
+}
+
+.fondo_marino{
+    background-color: #40362D;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    top: -410px;
+    z-index: 12;
+}
+
+.contacto{
+    background-color: #40362D;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    font-family: sans-serif;
+    font-weight: lighter;
+    z-index: 11;
+}
+
+.contacto input{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    border: solid 2px grey;
+    background-color: transparent;
+    color: #FFF;
+    margin-bottom: 1em;
+    padding: 1em .5em;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.contacto textarea{
+    padding: .5em;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: solid 2px grey;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1em;
+    min-height: 150px;
+}
+
+.contacto button{
+    height: 70px;
+    padding: .5em;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFF;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.contacto button:hover{
+    cursor: pointer;
+    background-color: #2E58A6;
+    color: #FFF;
+}

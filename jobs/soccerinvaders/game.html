@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main-min.css">
+    <link rel="stylesheet" href="game-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    
+    <div id="header">Soccer Invaders</div>
+    <div id="canvas-wrapper">
+        <div id="hud">
+            <img id="music" class="ui" onclick="mute()" src="img/horn.png">
+            <span id="time" class="ui">0</span>
+        </div>
+        <div id="mainmenu">
+            <h2 class="ui">Select player</h2>
+            <img id="cr" class="ui" onclick="jugar(0)" src="img/player_cr.png" height="300">
+            <img id="cup" class="ui" onclick="ranking()" src="img/cup.svg" height="100">
+            <img id="gamepad" class="ui" onclick="controls()" src="img/gamepad.png" height="100">
+            <img id="messi" class="ui" onclick="jugar(1)" src="img/player_m.png" height="300">
+        </div>
+        <div id="ranking">
+            <h2 class="ui">Ranking</h2>
+            <div id="ranking_table_wrapper" class="ui">
+            </div>
+            
+            <button class="goBack" onclick="goHome()">Back</button>
+            
+        </div>
+        <div id="controls">
+            <h2 class="ui">Game controls</h2>
+            <div id="ranking_table_wrapper" class="ui">
+                <img id="left-key"  class="keys"  src="img/left.png"><img id="right-key" class="keys"  src="img/right.png"><span class="key_label">Move player</span>
+                <img id="space-key" class="keys"  src="img/spacebar.png"><span class="key_label">Kick ball</span>
+                <button class="goBack" onclick="goHome()">Back</button>
+            </div>
+        </div>
+        <div id="final">
+            <h2 id="txt_fin" class="ui">Game Over</h2>
+            <img id="img_fin" class="ui"src="img/player_cr.png" height="300">
+            <div id="formulario_fin" class="ui">
+                <img id="jaja" src="img/jaja.png">
+                <h3 id="tiempo_fin">37</h3>
+                <h3 id="result_fin">Record</h3>
+                <input id="txtAlias_fin" type="text" placeholder="Alias">
+                <button id="save">Save</button>
+                <button id="home" onclick="goHome()">Home</button>
+                <button id="retry">Retry</button>
+            </div>
+        </div>
+        <canvas id="backgroundCanvas" class="canvas" width="800" height="500"></canvas>
+        <canvas id="playerCanvas" class="canvas" width="800" height="500"></canvas>
+        <canvas id="enemiesCanvas" class="canvas" width="800" height="500"></canvas>
+        <canvas id="itemsCanvas" class="canvas" width="800" height="500"></canvas>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

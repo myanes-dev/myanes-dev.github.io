@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Nature Sport</title>
+    <link type="text/css" rel="stylesheet" href="css/loader.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/animaciones.css">
+    <link type="text/css" rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="noscroll">
+    <div class="loader-container">
+    <div class="loader">
+      <div class="circle-1">
+        <div class="circle-2">
+          <div class="circle-3">
+            <div class="circle-4">
+              <div class="circle-5">
+                <div class="circle-6">
+                  <div class="circle-7">
+                    <div class="circle-8">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    
+    <div class="bg"  data-stellar-background-ratio="0.5"></div>
+    <header id="inicio-sp">
+        <div class="menu">
+            <span onclick="moverse('inicio-sp')" class="selected">INICIO</span>
+            <span onclick="moverse('aire-sp')">AIRE</span>
+            <span onclick="moverse('tierra-sp')">TIERRA</span>
+            <span onclick="moverse('mar-sp')">MAR</span>
+            <span onclick="moverse('contacto-sp')">CONTACTO</span>
+        </div>
+        <img class="logo" src="img/logo.svg">
+    </header>
+    <div class="aire" id="aire-sp">
+        <div class="menu">
+            <span onclick="moverse('inicio-sp')">INICIO</span>
+            <span onclick="moverse('aire-sp')"  class="selected">AIRE</span>
+            <span onclick="moverse('tierra-sp')">TIERRA</span>
+            <span onclick="moverse('mar-sp')">MAR</span>
+            <span onclick="moverse('contacto-sp')">CONTACTO</span>
+        </div>
+        <img class ="avioneta" src="img/avioneta.svg" data-stellar-ratio="1.5">
+        <img class ="parapente"src="img/parapente.svg" data-stellar-ratio="0.4">
+        <img class ="nubes" src="img/nube1.svg" data-stellar-ratio="0.6">
+        <img class ="nubes" src="img/nube2.svg" data-stellar-ratio="0.9">
+        <img class ="nubes" src="img/nube1.svg" data-stellar-ratio="0.8">
+        <img class ="nubes" src="img/nube3.svg" data-stellar-ratio="0.7">
+        <img class ="nubes" src="img/nube2.svg" data-stellar-ratio="0.7">
+
+    </div>
+    <div class="tierra">
+        <div class="menu"  id="tierra-sp">
+            <span onclick="moverse('inicio-sp')">INICIO</span>
+            <span onclick="moverse('aire-sp')">AIRE</span>
+            <span onclick="moverse('tierra-sp')" class="selected">TIERRA</span>
+            <span onclick="moverse('mar-sp')">MAR</span>
+            <span onclick="moverse('contacto-sp')">CONTACTO</span>
+        </div>
+        <img class="montanas" src="img/montanas-colina.svg"  data-stellar-ratio="1.1" data-stellar-vertical-offset="500">
+        <img class="colina_ciclista" src="img/ciclista-y-colina.svg" data-stellar-ratio="1.2" data-stellar-vertical-offset="100">
+        <img class="tierra_fijo" src="img/senderista-carteles-colina-playa-v2.svg">
+        <img class="mariposa" src="img/mariposa.svg">
+        
+    </div>
+    <div class="mar">
+        <div class="ola3"></div>
+        <div class="ola2"></div>
+        <div class="ola1"></div>
+        <div class="ola_fondo"></div>
+    </div>
+    <div class="oceano" >
+        <div class="menu" id="mar-sp">
+            <span onclick="moverse('inicio-sp')">INICIO</span>
+            <span onclick="moverse('aire-sp')">AIRE</span>
+            <span onclick="moverse('tierra-sp')">TIERRA</span>
+            <span onclick="moverse('mar-sp')" class="selected">MAR</span>
+            <span onclick="moverse('contacto-sp')">CONTACTO</span>
+        </div>
+        <img class="oceano-items buceadora" src="img/buceadora.svg">
+        <img class="oceano-items bandana" src="img/bandada.svg">
+        <img class="oceano-items tres_peces" src="img/3-peces.svg">
+        <div class="oceano-items tiburon" data-stellar-ratio="1"></div>
+        <img class="oceano-items pejeverde" src="img/pejeverde.svg">
+        <img class="oceano-items pez" src="img/pez-azul.svg">
+    </div>
+        <img class="suelo_marino" src="img/suelomarino-se%C3%B1al.svg">
+    <div class="fondo_marino" id="contacto-sp">
+        <div class="menu"  id="contacto-sp">
+            <span onclick="moverse('inicio-sp')">INICIO</span>
+            <span onclick="moverse('aire-sp')">AIRE</span>
+            <span onclick="moverse('tierra-sp')">TIERRA</span>
+            <span onclick="moverse('mar-sp')">MAR</span>
+            <span onclick="moverse('contacto-sp')" class="selected">CONTACTO</span>
+        </div>
+        <div class="contacto">
+            <input type="text" name="email" placeholder="Dirección de Email">
+            <input type="tel" name="telefono" placeholder="Número de Teléfono">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button name="enviar">Enviar</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+  $('html, body').removeAttr('style')
+</script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+.backgroundBlur{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:50;
+    background-color: #000;
+    opacity: 0.8;
+    display:none;
+    
+}
+
+.sombra{
+    box-shadow:  0 2px 1px rgba(0,0,0,0.08);
+}
+
+#cabecera{
+    width:100%;
+    height: 48px;
+    background-color: #03A9F4;
+    line-height: 48px;
+    color: #FFF;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+}
+#cabecera span{
+    float: right;
+}
+#cuerpo{
+    width: 100%;
+}
+
+#top{
+    width: 560px;
+    margin: auto;
+}
+
+#form{
+    width:400px;
+    padding: 10px;
+    float: left;
+    background-color: #FFF;
+    margin-left: calc(50% - 200px);
+    margin-bottom: 20px;
+}
+
+.formOculto{
+    width:400px;
+    padding: 10px;
+  /*  float: left;*/
+    background-color: #FFF;
+    /*margin-left: calc(50% - 200px);
+    margin-bottom: 20px;*/
+    position: fixed;
+    left: calc(50% - 200px);
+    bottom: 50%;
+    display: none;
+    z-index: 90;
+    
+}
+.textareaOculto{
+    width:100%;
+    max-width: 100%;
+    height: 80px;
+    max-height:80px;
+    margin-bottom: 10px;
+}
+
+#form__menu{
+    width: 100%;
+    height: 32px;
+}
+
+.form__menu__button{
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+    width: 25%;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    background-size: 32px 32px;
+}
+
+#checkAll{
+    background-image: url(img/checkbox-marked.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#clear{
+    background-image: url(img/checkbox-blank.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#delete{
+    background-image: url(img/close-box.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ordenar{
+    background-image: url(img/sort.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#errEliminar, #errNueva{
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    display: none;
+    padding: 5px;
+    
+}
+
+#errNueva{
+    margin-bottom: 15px;
+}
+
+.form__button, .form__button--rojo{
+    width:100px;
+    height: 35px;
+    float: right;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: #03A9F4;
+    color:#FFF;
+}
+.form__button--rojo:hover{
+    background-color: #F44336;
+    color:#FFF;
+}
+.form__menu__button:hover{
+    position: relative;
+    bottom: 5px;
+}
+
+#form__txt{
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#form__textarea{
+    width:100%;
+    max-width: 100%;
+    height: 80px;
+    max-height:80px;
+    margin-bottom: 10px;
+}
+#right{
+   
+    float: left;
+    background-color: #e5e5e5;
+    padding: 5px;
+}
+#paleta{
+    width: 220px;
+    margin: auto;
+    text-align: center;
+}
+.radioButton{
+    display: none;
+}
+
+.radioButton:checked + label {  
+
+border: solid 2px #7F5F53;        
+color:#7F5F53;
+}
+
+.paleta__color{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.paleta__color:hover{
+    
+    position: relative;
+    bottom: 5px;
+}
+
+.rojo{
+    background-color: #F44336;
+}
+.naranja{
+    background-color: #FF9800;
+}
+.amarillo{
+    background-color: #FFEB3B;
+}
+.verde{
+    background-color: #4CAF50;
+}
+.azul{
+    background-color: #2196F3;
+}
+.blanco{
+    background-color: #FFF;
+}
+#listado{
+    clear: left;
+    width: 550px;
+    height: auto;
+    margin: auto;
+}
+
+.listado__entrada{
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 95px;
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox{
+    margin-left: 5px;
+    float: left;
+}
+
+.listado__entrada__contenedor_texto{
+    margin-left: 5px;
+    width: 500px;
+    float: left;
+}
+
+.listado__entrada_text{
+    cursor: pointer;
+    word-wrap: normal;
+}
+
+.editButton{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-image: url(img/edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.editButton:hover{
+    background-size: 32px;
+}

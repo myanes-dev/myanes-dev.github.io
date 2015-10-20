@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="cargar()">
+    <div id="modalbackground" class="backgroundBlur">
+        </div>
+    <div id="cabecera" class="sombra">
+        <a>☰ Mis Proyectos > Lista de Tareas</a>
+        <span>Miguel Vicente Yanes Martínez</span>
+    </div>
+    <div id="cuerpo">
+            <div id="form" class="sombra">
+                <div id="form__menu">
+                    <div id="checkAll" title="Marcar todos" class="form__menu__button" onclick="checkAll()"></div>
+                    <div id="clear" title="Desmarcar todos" class="form__menu__button" onclick="limpiar()"></div>
+                    <div id="delete" title="Eliminar" class="form__menu__button" onclick="eliminar()"></div>
+                    <div id="ordenar" title="Ordenar" class="form__menu__button" onclick="ordenar()"></div>
+                </div>
+                <div id="errEliminar" class="amarillo">Seleccione la tarea que desea eliminar</div>
+                <div id="form__txt">
+                    <textarea id="form__textarea" placeholder="Apunta una nueva tarea"></textarea>
+            <div id="errNueva" class="rojo">La tarea está vacía</div>
+                </div>
+                <div id="right"  class="sombra">
+                    <div id="paleta">
+                       <!-- <input type="radio" name="grupoPaleta" id="radioRojo" class="radioButton">
+                        <label id="rojo" class="paleta__color sombra rojo" for="radioRojo"></label>
+                        <input type="radio" name="grupoPaleta" id="radioNaranja" class="radioButton">
+                        <label id="naranja" class="paleta__color sombra naranja" for="radioNaranja"></label>
+                        <input type="radio" name="grupoPaleta" id="radioAmarillo" class="radioButton">
+                        <label id="amarillo" class="paleta__color sombra amarillo" for="radioAmarillo"></label>
+                        <input type="radio" name="grupoPaleta" id="radioVerde" class="radioButton">
+                        <label id="verde" class="paleta__color sombra verde" for="radioVerde"></label>
+                        <input type="radio" name="grupoPaleta" id="radioAzul" class="radioButton">
+                        <label id="azul" class="paleta__color sombra azul" for="radioAzul"></label>
+                        <input type="radio" name="grupoPaleta" id="radioBlanco" class="radioButton">
+                        <label id="blanco" class="paleta__color sombra blanco" for="radioBlanco"></label> -->
+                    </div>
+                </div>
+                <div id="nuevaTarea" class="form__button" onclick="nuevaTarea()">Nueva</div>
+                
+            </div>
+        
+                    
+        <ol id="listado">
+            <!--<li class="listado__entrada sombra">
+                    <input id="cb1" type="checkbox" class="checkBox">
+                    <div class="listado__entrada__contenedor_texto">
+                        <label for="cb1" class="listado__entrada__text">Hola que aseeeeeeeeeeeeeeee ee  re rer e reeeeeeeeeeeeeeee re e eee ee  e eeeeeee eeeeeeee
+                        </label>
+                    </div>
+            </li>-->
+        </ol>
+<!--        <div id="formOculto" class="sombra">
+            <textarea id="textareaOculto"></textarea>
+            <div id="edtarTarea" class="form__button" onclick="confirmarEditar(this)">Confirmar</div>
+        </div> -->
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
