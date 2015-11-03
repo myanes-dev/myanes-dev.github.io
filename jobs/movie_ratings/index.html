@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Movie Ratings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <script type="text/javascript" src="movieRatings.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Think in any movie...</h1>
+        <form id="frm_search" name="frm_search" action="" onsubmit="return search();" method="post">
+            <input id="txt_fname" type="text" name="fname"><input id="bt_search" type="submit" value="Search">
+        </form>
+    </div>
+    <div class="loader"></div>
+    <div class="movie_not_found"><h3>Movie not found :(</h3></div>
+    <div class="movie_ratings_wrapper hide">
+        <div class="movie_ratings"> 
+            <div class="movie_left">
+                <div id="poster" class="movie_poster"></div>
+                <a class="movie_id" href="#"><div class="movie_imdb"><img src="img/imdb.png"><span class="movie_imdb_rating"></span></div></a>
+            </div>
+            <div class="movie_right">
+                <h2 class="movie_title"></h2>
+                <label>Year</label>
+                <span class="movie_year"></span>
+                <label>Public</label>
+                <span class="movie_public"></span>
+                <label>Release date</label>
+                <span class="movie_release"></span>
+                <label>Runtime</label>
+                <span class="movie_runtime"></span>
+                <label>Genre</label>
+                <span class="movie_genre"></span>
+                <label>Director</label>
+                <span class="movie_director"></span>
+                <label>Writers</label>
+                <span class="movie_writers"></span>
+                <label>Actors</label>
+                <span class="movie_actors"></span>
+                <label>Plot</label>
+                <span class="movie_plot"></span>
+                <label>Languages</label>
+                <span class="movie_language"></span>
+                <label>Country</label>
+                <span class="movie_country"></span>
+                <label>Awards</label>
+                <span class="movie_awards"></span>
+            </div>
+        </div>
+    </div>
+    <footer><span>mvyanes-dev</span><span>Miguel Vicente Yanes Martínez</span><span>2015</span></footer>
+</body>
+</html>

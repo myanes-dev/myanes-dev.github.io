@@ -277,6 +277,17 @@ header a{
                  url("../img/job05-sd.png");
     background-size: cover;
 }
+.card:nth-child(6){
+  background-image: url("../img/job06-sd.png");
+}
+.card:nth-child(6):hover{
+    background:  linear-gradient(
+                          rgba(0, 0, 0, 0.7), 
+                          rgba(0, 0, 0, 0.7)
+                        ),
+                 url("../img/job06-sd.png");
+    background-size: cover;
+}
 
 /*.card:hover{
     background:  linear-gradient(
