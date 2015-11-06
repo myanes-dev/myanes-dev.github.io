@@ -115,6 +115,20 @@ header a{
     margin-bottom: 2em;
 }
 
+#menu .tooltip {
+    z-index:10;display:none;
+}
+#menu li:hover .tooltip{
+    display:block; position:absolute;
+    width: 8em;
+    left: calc(50% - 4em);
+    color:#FFF;
+    background:#2e3842;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+
 #menu li{
     margin: 2em 0;
 }
@@ -130,7 +144,6 @@ header a{
     display: inline-block;
     font-size: 1.35em;
     text-align: center;
-    line-height: 3em;
     width: 3em;
     height: 3em;
     transform: rotate(-45deg);
@@ -172,7 +185,18 @@ header a{
     background-position: center;
     background-size: cover;
 }
+.row:nth-child(1) .row_picture{
+    background-image: url(../img/service.jpg);
+}
 
+.row:nth-child(2) .row_picture{
+    background-color: #FFF;
+    background-image: url(../img/service2.png);
+}
+
+.row:nth-child(3) .row_picture{
+    background-image: url(../img/service3.png);
+}
 .row_desc{
     padding: 1em;
 }
